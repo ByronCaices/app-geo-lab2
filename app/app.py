@@ -31,6 +31,25 @@ import warnings
 warnings.filterwarnings('ignore')
 
 # ============================================================================
+# CONFIGURACIÓN DE RUTAS - Compatible con Streamlit Cloud y local
+# ============================================================================
+def get_base_dir():
+    """
+    Obtiene el directorio base del proyecto de forma robusta.
+    Funciona tanto en local como en Streamlit Cloud.
+    """
+    # Intentar obtener desde __file__
+    current_file = Path(__file__).resolve()
+    
+    # Si estamos en app/app.py, subir un nivel
+    if current_file.parent.name == 'app':
+        return current_file.parent.parent
+    else:
+        return current_file.parent
+
+BASE_DIR = get_base_dir()
+
+# ============================================================================
 # CONFIGURACIÓN DE LA PÁGINA
 # ============================================================================
 
@@ -112,11 +131,10 @@ def cargar_datos():
         tuple: (gdf_zonas, df_ranking, df_temporal, stats_exists)
     """
     # Rutas base
-    base_dir = Path(__file__).parent.parent
-    ruta_vector = base_dir / 'data' / 'vector' / 'zonas_con_datos.gpkg'
-    ruta_ranking = base_dir / 'data' / 'processed' / 'ranking_zonas.csv'
-    ruta_temporal = base_dir / 'data' / 'processed' / 'evolucion_temporal.csv'
-    ruta_stats = base_dir / 'data' / 'processed' / 'estadisticas_zonales.csv'
+    ruta_vector = BASE_DIR / 'data' / 'vector' / 'zonas_con_datos.gpkg'
+    ruta_ranking = BASE_DIR / 'data' / 'processed' / 'ranking_zonas.csv'
+    ruta_temporal = BASE_DIR / 'data' / 'processed' / 'evolucion_temporal.csv'
+    ruta_stats = BASE_DIR / 'data' / 'processed' / 'estadisticas_zonales.csv'
     
     # Verificar existencia de archivos
     if not ruta_vector.exists():
@@ -146,8 +164,7 @@ def verificar_imagenes_ndvi():
     Retorna:
         dict: Diccionario con años disponibles y rutas de imágenes
     """
-    base_dir = Path(__file__).parent.parent
-    output_dir = base_dir / 'outputs' / 'figures'
+    output_dir = BASE_DIR / 'outputs' / 'figures'
     
     imagenes = {}
     for year in [2018, 2020, 2022, 2024]:
@@ -443,9 +460,8 @@ st.markdown("---")
 st.subheader("🎬 Animaciones de Evolución Temporal")
 
 # Verificar existencia de GIFs
-base_dir = Path(__file__).parent.parent
-gif_ndbi = base_dir / 'outputs' / 'figures' / 'evolucion_urbanizacion_penaflor.gif'
-gif_comparacion = base_dir / 'outputs' / 'figures' / 'comparacion_ndvi_ndbi.gif'
+gif_ndbi = BASE_DIR / 'outputs' / 'figures' / 'evolucion_urbanizacion_penaflor.gif'
+gif_comparacion = BASE_DIR / 'outputs' / 'figures' / 'comparacion_ndvi_ndbi.gif'
 
 def mostrar_gif_animado(ruta_gif, titulo=""):
     """Mostrar GIF animado usando HTML5 embebido"""
@@ -826,8 +842,7 @@ st.sidebar.markdown("---")
 st.sidebar.subheader("💾 Descarga de Datos")
 
 if stats_exists:
-    base_dir = Path(__file__).parent.parent
-    ruta_stats = base_dir / 'data' / 'processed' / 'estadisticas_zonales.csv'
+    ruta_stats = BASE_DIR / 'data' / 'processed' / 'estadisticas_zonales.csv'
     
     with open(ruta_stats, 'rb') as f:
         csv_data = f.read()
