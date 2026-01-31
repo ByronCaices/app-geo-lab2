@@ -129,11 +129,17 @@ dmypy.json
 
 # Ignorar datos pesados (imágenes satelitales)
 data/raw/*
-data/processed/*
-outputs/*
-
-# Mantener carpetas vacías con .gitkeep
 !data/raw/.gitkeep
+
+# Permitir archivos procesados necesarios para la app
+data/processed/*.tif
+!data/processed/*.csv
+!data/processed/*.geojson
 !data/processed/.gitkeep
-!data/vector/.gitkeep
+
+# Permitir outputs visuales para la app
+!outputs/figures/*.png
+!outputs/figures/*.gif
+!outputs/maps/*.html
+!outputs/reports/*.txt
 !outputs/.gitkeep

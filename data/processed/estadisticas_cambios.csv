@@ -1,0 +1,9 @@
+Método,pixeles_validos,pixeles_perdida,pixeles_ganancia,pixeles_sin_cambio,pct_perdida,pct_ganancia,pct_sin_cambio,ha_perdida,ha_ganancia,ha_sin_cambio,diferencia_media,diferencia_std,diferencia_min,diferencia_max,Categoría,Píxeles,Porcentaje,Hectáreas,pixeles_anomalia_negativa,pixeles_anomalia_positiva,pixeles_normal,pct_anomalia_negativa,pct_anomalia_positiva,pct_normal,ha_anomalia_negativa,ha_anomalia_positiva,ha_normal,zscore_media,zscore_std,zscore_min,zscore_max,umbral_utilizado
+Diferencia Simple,2433600.0,374262.0,246346.0,1812992.0,15.378944773175542,10.122698882314268,74.49835634451019,3742.62,2463.46,18129.920000000002,,,,,,,,,,,,,,,,,,,,,,
+Clasificación Multicriterio,,,,,,,,,,,,,,,Sin cambio,1798665.0,73.90964003944774,17986.65,,,,,,,,,,,,,,
+Clasificación Multicriterio,,,,,,,,,,,,,,,Urbanización,168936.0,6.941814595660749,1689.3600000000001,,,,,,,,,,,,,,
+Clasificación Multicriterio,,,,,,,,,,,,,,,Pérdida vegetación,219619.0,9.024449375410914,2196.19,,,,,,,,,,,,,,
+Clasificación Multicriterio,,,,,,,,,,,,,,,Ganancia vegetación,246336.0,10.122287968441814,2463.36,,,,,,,,,,,,,,
+Clasificación Multicriterio,,,,,,,,,,,,,,,Nuevo cuerpo agua,13.0,0.0005341880341880342,0.13,,,,,,,,,,,,,,
+Clasificación Multicriterio,,,,,,,,,,,,,,,Pérdida agua,31.0,0.0012738330046022353,0.31,,,,,,,,,,,,,,
+Análisis Z-score,2433600.0,,,,,,,,,,,,,,,,,,250620.0,645891.0,1537089.0,10.298323471400394,26.540557199211044,63.16111932938856,2506.2000000000003,6458.91,15370.89,,,,,2.0
