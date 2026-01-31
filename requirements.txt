@@ -1,0 +1,31 @@
+# Google Earth Engine
+earthengine-api
+geemap
+
+# Procesamiento de rasters y vectores
+rasterio
+geopandas
+shapely
+fiona
+pyproj
+
+# Análisis zonal y estadísticas
+rasterstats
+scipy
+
+# Visualización y Dashboard
+streamlit
+streamlit-folium
+folium
+plotly
+matplotlib
+
+# Animaciones y procesamiento de imágenes
+imageio
+pillow
+
+# Utilidades
+numpy
+pandas
+jupyter
+ipykernel

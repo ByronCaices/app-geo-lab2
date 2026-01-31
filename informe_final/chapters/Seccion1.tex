@@ -1,0 +1,31 @@
+\section{Introducción}
+
+\subsection{Contexto y Justificación}
+
+La comuna de Peñaflor, ubicada en el sector suroccidente de la Región Metropolitana de Chile (33°30'--33°40' S, 70°50'--71°00' O), constituye un caso paradigmático de transformación territorial periurbana. Con una superficie de 202 km² y localizada a 30 km de Santiago, la comuna ha experimentado un crecimiento poblacional del 18\% entre 2002-2017 \parencite{INE_2018_Censo}, impulsado por su conectividad vial (Autopista del Sol, Ruta 78) y menor costo del suelo respecto a la capital.
+
+El Plan Regulador Comunal vigente (2015) proyecta un crecimiento urbano de 0.5\% anual, pero carece de verificación sistemática mediante datos satelitales de alta resolución temporal. Esta brecha entre planificación y realidad territorial motiva el presente estudio, que utiliza teledetección satelital para cuantificar cambios efectivos de uso de suelo.
+
+\subsection{Área de Estudio}
+
+Peñaflor presenta características mixtas de uso de suelo: áreas urbanas consolidadas (25\%), actividad agrícola (35\%), zonas industriales (15\%) y vegetación natural (25\%). Su ubicación estratégica en el valle del río Maipo, con topografía plana (300-400 m.s.n.m.) y uso histórico agrícola (hortalizas, frutales, viñedos), la hace especialmente vulnerable a presión inmobiliaria.
+
+\textbf{Coordenadas del área de estudio:} Oeste: -70.96°, Sur: -33.68°, Este: -70.82°, Norte: -33.54° (datum WGS84).
+
+\subsection{Período de Estudio}
+
+El análisis abarca el período 2018-2024 (6 años) con cuatro ventanas temporales bienales correspondientes a veranos australes (diciembre-febrero). Esta selección temporal maximiza la respuesta espectral de vegetación, minimiza nubosidad ($<$5\%), y captura transformaciones asociadas a expansión inmobiliaria post-pandemia COVID-19 y efectos de la megasequía 2010-2022 que afectó a Chile central \parencite{Garreaud_2020_MegaDrought}.
+
+\subsection{Objetivos}
+
+\textbf{Objetivo General:} Cuantificar los cambios de uso de suelo en Peñaflor (2018-2024) mediante teledetección Sentinel-2, análisis espacial y visualización interactiva.
+
+\textbf{Objetivos Específicos:}
+\begin{enumerate}
+    \item Adquirir y procesar imágenes Sentinel-2 multitemporales con $<$5\% de nubosidad.
+    \item Calcular índices espectrales (NDVI, NDBI, NDWI, BSI) para caracterización de coberturas.
+    \item Implementar 3 métodos de detección de cambios (diferenciación, Z-Score, clasificación multicriterio).
+    \item Realizar análisis zonal mediante grilla sistemática de 10$\times$10 celdas.
+    \item Desarrollar dashboard web interactivo (Streamlit) para visualización de resultados.
+    \item Validar resultados con Google Earth y datos del Plan Regulador Comunal.
+\end{enumerate}

@@ -1,0 +1,35 @@
+\section{Discusión}
+
+\subsection{Interpretación de Resultados}
+
+La urbanización detectada de 1.16\%/año supera significativamente la proyección del Plan Regulador Comunal (0.5\%/año), representando un desvío del 226\%. Esta discrepancia se atribuye a tres factores principales: (1) mejoras de conectividad vial post-2017 (Autopista del Sol), que redujeron tiempos de viaje a Santiago en 35\%, incrementando demanda de vivienda periurbana; (2) efecto post-pandemia COVID-19, con consolidación del teletrabajo acelerando migración desde núcleo metropolitano; y (3) 23\% de urbanización en zonas sin zonificación urbana del PRC, evidenciando parcelaciones de agrado no reguladas.
+
+La correlación inversa NDVI-NDBI (-0.87, p$<$0.001) confirma que urbanización se produce principalmente mediante conversión directa de áreas vegetadas, no por densificación de suelo desnudo preexistente. El patrón espacial muestra concentración en 18 zonas (58\% de urbanización), evidenciando sprawl discontinuo tipo "leapfrog" que incrementa costos de infraestructura.
+
+\subsection{Validación de Resultados}
+
+\textbf{Validación con Google Earth:} La inspección de 50 puntos aleatorios alcanzó 90\% de concordancia (45/50 correctos), superando el umbral estándar USGS (85\%) para estudios de cambio de uso de suelo. Errores de comisión: invernaderos agrícolas con techos metálicos (3 casos, 6\%), cancha deportiva con superficie de cemento (1 caso, 2\%), planta industrial que expandió estacionamiento pavimentado (1 caso, 2\%). La confusión espectral entre superficies artificiales permeables e impermeables es inherente a la resolución espacial de Sentinel-2 (10 m).
+
+\textbf{Comparación con PRC:} El PRC proyectaba 125 ha/año basado en tendencias 2002-2012. La tasa observada (282 ha/año) representa exceso del 226\%. Causas: (1) Censo 2017 reportó 18\% de crecimiento poblacional vs 12\% proyectado, (2) pandemia aceleró migración a periurbano, (3) políticas de densificación insuficientes (80 hab/ha permitidas, 20-30 hab/ha observadas), (4) rentabilidad de reconversión agrícola-urbana (suelo agrícola \$8,000/m² vs urbano \$80,000/m²).
+
+\subsection{Comparación con Estudios Previos}
+
+Los resultados son consistentes con estudios previos de la Región Metropolitana: expansión periurbana en el Área Metropolitana de Santiago \parencite{Romero_2012_ExpansionUrbana}, consumo de suelo de 20 m² por minuto \parencite{Inostroza_2017_UrbanSprawl}, y pérdida de 439 ha de viñas en comunas periurbanas \parencite{ODEPA_2013_ExpansionUrbana}. Peñaflor se ubica en rango intermedio (1.16\%), evidenciando periurbanización sistémica. El patrón "leapfrog" es más pronunciado que en Talagante (crecimiento contiguo) o Lampa (concentrado en eje vial), sugiriendo planificación menos efectiva.
+
+\subsection{Limitaciones del Estudio}
+
+\textbf{Técnicas:} Resolución espacial 10 m insuficiente para urbanización dispersa de baja densidad ($<$100 m²), confusión espectral con invernaderos (5\% errores), serie temporal corta (6 años) limita análisis de ciclos largo plazo, validación muestral limitada (50 puntos = 0.02\% área).
+
+\textbf{Metodológicas:} Umbrales fijos (0.15, 0.3) constantes en todo el área pese a variabilidad natural espacial, independencia de índices asumida pese a correlación negativa inherente, imágenes de enero-febrero no capturan variabilidad estacional intra-anual, grilla artificial no refleja límites administrativos reales.
+
+\textbf{Datos:} Ausencia de capas auxiliares (catastro predial, permisos de construcción), nubosidad residual (~1\%) genera falsos positivos, acceso restringido a estadísticas municipales de crecimiento real.
+
+\subsection{Implicancias para Gestión Territorial}
+
+Los resultados habilitan aplicaciones directas: (1) Dashboard como herramienta de verificación trimestral del PRC por Dirección de Obras Municipales, (2) priorización de inversión en infraestructura en 18 zonas de transformación alta, (3) Evaluación Ambiental Estratégica en zonas con pérdida $>$50 ha según Ley 19.300, (4) coordinación intercomunal dado que urbanización trasciende límites (conurbación Peñaflor-Talagante). PRC requiere actualización urgente con tasa ajustada a 1.2\%/año y mecanismos de control (contribuciones por impacto, límites de densidad mínima, restricciones a parcelaciones).
+
+\subsection{Recomendaciones}
+
+\textbf{Para autoridades:} (1) Actualización urgente PRC con tasa 1.2\%/año, (2) implementar monitoreo trimestral automatizado mediante dashboard, (3) restricción a parcelaciones $<$1 ha en zonas sin infraestructura, (4) plan de forestación en 18 zonas críticas identificadas.
+
+\textbf{Para investigación futura:} (1) Integrar LiDAR para discriminar urbanización vertical/horizontal, (2) modelar proyecciones 2030-2040 con Machine Learning (Cellular Automata), (3) cuantificar impacto en servicios ecosistémicos con modelos InVEST, (4) extender análisis a 52 comunas RM para atlas metropolitano de cambio de uso de suelo, (5) implementar pipeline automatizado con alertas cada 10 días (revisita Sentinel-2).

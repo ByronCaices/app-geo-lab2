@@ -1,0 +1,30 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Introducción}{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Contexto y Justificación}{1}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Área de Estudio}{1}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Período de Estudio}{1}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}Objetivos}{2}{subsection.1.4}%
+\contentsline {section}{\numberline {2}Metodología}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Diseño General}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Fase 1: Adquisición de Datos Satelitales}{3}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Fase 2: Cálculo de Índices Espectrales}{3}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Fase 3: Detección de Cambios}{4}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Fase 4: Análisis Zonal}{4}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Fase 5: Dashboard Interactivo}{5}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.7}Validación}{5}{subsection.2.7}%
+\contentsline {section}{\numberline {3}Resultados}{6}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Adquisición y Calidad de Datos}{6}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Evolución de Índices Espectrales 2018-2024}{6}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Detección de Cambios por Método}{6}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Análisis Zonal: Hotspots de Transformación}{7}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Evolución Temporal}{7}{subsection.3.5}%
+\contentsline {section}{\numberline {4}Discusión}{8}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Interpretación de Resultados}{8}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Validación de Resultados}{8}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Comparación con Estudios Previos}{9}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Limitaciones del Estudio}{9}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Implicancias para Gestión Territorial}{9}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Recomendaciones}{10}{subsection.4.6}%
+\contentsline {section}{\numberline {5}Conclusiones}{10}{section.5}%
+\contentsline {section}{Bibliografía}{13}{section.5}%
+\contentsline {section}{Anexos}{14}{section*.3}%

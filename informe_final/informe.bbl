@@ -1,0 +1,763 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{apa/apasortcite//global/global}
+    \entry{Garreaud_2020_MegaDrought}{article}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=0f858f5cfcbbd7f8c179371da6d96285}{%
+           family={Garreaud},
+           familyi={G\bibinitperiod},
+           given={René\bibnamedelima D.},
+           giveni={R\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7bcfad5db175a0a45e1cb11251da140e}{%
+           family={Boisier},
+           familyi={B\bibinitperiod},
+           given={Juan\bibnamedelima Pablo},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=684b649aab435fbbada6fdc33830c5d5}{%
+           family={Rondanelli},
+           familyi={R\bibinitperiod},
+           given={Roberto},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0428da2396020989f02865d310052228}{%
+           family={Montecinos},
+           familyi={M\bibinitperiod},
+           given={Aldo},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2684d42b8b8d43013efcf2eadb6eccf0}{%
+           family={Sepúlveda},
+           familyi={S\bibinitperiod},
+           given={Humberto\bibnamedelima H.},
+           giveni={H\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=94ebc7eb5dcd91d8fec78ce88b16aa59}{%
+           family={Veloso-Aguila},
+           familyi={V\bibinithyphendelim A\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ec384d7d3619119bea447c2f263992a4}
+      \strng{fullhash}{7e69f2b7296a340e324803e6be6e9162}
+      \strng{bibnamehash}{7e69f2b7296a340e324803e6be6e9162}
+      \strng{authorbibnamehash}{7e69f2b7296a340e324803e6be6e9162}
+      \strng{authornamehash}{ec384d7d3619119bea447c2f263992a4}
+      \strng{authorfullhash}{7e69f2b7296a340e324803e6be6e9162}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Climatology}
+      \field{number}{1}
+      \field{title}{The Central Chile Mega Drought (2010--2018): A climate dynamics perspective}
+      \field{volume}{40}
+      \field{year}{2020}
+      \field{pages}{421\bibrangedash 439}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1002/joc.6219
+      \endverb
+      \verb{urlraw}
+      \verb https://hess.copernicus.org/articles/29/5347/2025/
+      \endverb
+      \verb{url}
+      \verb https://hess.copernicus.org/articles/29/5347/2025/
+      \endverb
+    \endentry
+    \entry{Inostroza_2017_UrbanSprawl}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=98c480d18b8bcd8e418ef26fc9253508}{%
+           family={Inostroza},
+           familyi={I\bibinitperiod},
+           given={Luis},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7003a3d13e45c25383266e7950b5bc9a}{%
+           family={Baur},
+           familyi={B\bibinitperiod},
+           given={Roland},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=93e3e325dad35a3c94ea1312a3401ae7}{%
+           family={Csaplovics},
+           familyi={C\bibinitperiod},
+           given={Elmar},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e217fd3734713ce212dc0c50f2505c12}
+      \strng{fullhash}{30d9cd536c88b82caa87a99be782149a}
+      \strng{bibnamehash}{30d9cd536c88b82caa87a99be782149a}
+      \strng{authorbibnamehash}{30d9cd536c88b82caa87a99be782149a}
+      \strng{authornamehash}{e217fd3734713ce212dc0c50f2505c12}
+      \strng{authorfullhash}{30d9cd536c88b82caa87a99be782149a}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Environmental Management}
+      \field{note}{Consumo de suelo en Santiago: 20 m² por minuto}
+      \field{title}{Urban sprawl and fragmentation in Latin America: A dynamic quantification and characterization of spatial patterns}
+      \field{volume}{115}
+      \field{year}{2013}
+      \field{pages}{87\bibrangedash 97}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1016/j.jenvman.2012.11.007
+      \endverb
+      \verb{urlraw}
+      \verb https://scholar.google.com/citations?user=klkUZvIAAAAJ
+      \endverb
+      \verb{url}
+      \verb https://scholar.google.com/citations?user=klkUZvIAAAAJ
+      \endverb
+    \endentry
+    \entry{INE_2018_Censo}{report}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a47a81adfd6b4513ddd86da671d47025}{%
+           family={{Instituto Nacional de Estadísticas}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {INE}%
+      }
+      \list{location}{1}{%
+        {Santiago, Chile}%
+      }
+      \strng{namehash}{a47a81adfd6b4513ddd86da671d47025}
+      \strng{fullhash}{a47a81adfd6b4513ddd86da671d47025}
+      \strng{bibnamehash}{a47a81adfd6b4513ddd86da671d47025}
+      \strng{authorbibnamehash}{a47a81adfd6b4513ddd86da671d47025}
+      \strng{authornamehash}{a47a81adfd6b4513ddd86da671d47025}
+      \strng{authorfullhash}{a47a81adfd6b4513ddd86da671d47025}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Reportes Comunales BCN basados en Censo 2017. Población Peñaflor: 90.201 habitantes}
+      \field{title}{Resultados Censo 2017: Región Metropolitana}
+      \field{type}{techreport}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://www.bcn.cl/siit/reportescomunales/comunas_v.html?anno=2017&idcom=13605
+      \endverb
+      \verb{url}
+      \verb https://www.bcn.cl/siit/reportescomunales/comunas_v.html?anno=2017&idcom=13605
+      \endverb
+    \endentry
+    \entry{ODEPA_2013_ExpansionUrbana}{report}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3761bca52accb618180666154edff8b1}{%
+           family={{Oficina de Estudios y Políticas Agrarias}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {ODEPA, Ministerio de Agricultura}%
+      }
+      \list{location}{1}{%
+        {Santiago, Chile}%
+      }
+      \strng{namehash}{3761bca52accb618180666154edff8b1}
+      \strng{fullhash}{3761bca52accb618180666154edff8b1}
+      \strng{bibnamehash}{3761bca52accb618180666154edff8b1}
+      \strng{authorbibnamehash}{3761bca52accb618180666154edff8b1}
+      \strng{authornamehash}{3761bca52accb618180666154edff8b1}
+      \strng{authorfullhash}{3761bca52accb618180666154edff8b1}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Pérdida de 439 hectáreas de viñas en comunas periurbanas}
+      \field{title}{Expansión urbana y suelo agrícola: revisión de la situación en la Región Metropolitana}
+      \field{type}{techreport}
+      \field{year}{2013}
+      \verb{urlraw}
+      \verb https://www.odepa.gob.cl/wp-content/uploads/2013/12/expansionUrbana201312.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.odepa.gob.cl/wp-content/uploads/2013/12/expansionUrbana201312.pdf
+      \endverb
+    \endentry
+    \entry{Openshaw_1984_MAUP}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=20e0ba867779652a3b4f986e87eea9df}{%
+           family={Openshaw},
+           familyi={O\bibinitperiod},
+           given={Stan},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Norwich, UK}%
+      }
+      \list{publisher}{1}{%
+        {Geo Books}%
+      }
+      \strng{namehash}{20e0ba867779652a3b4f986e87eea9df}
+      \strng{fullhash}{20e0ba867779652a3b4f986e87eea9df}
+      \strng{bibnamehash}{20e0ba867779652a3b4f986e87eea9df}
+      \strng{authorbibnamehash}{20e0ba867779652a3b4f986e87eea9df}
+      \strng{authornamehash}{20e0ba867779652a3b4f986e87eea9df}
+      \strng{authorfullhash}{20e0ba867779652a3b4f986e87eea9df}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{38}
+      \field{series}{Concepts and Techniques in Modern Geography}
+      \field{title}{The Modifiable Areal Unit Problem}
+      \field{year}{1984}
+      \verb{urlraw}
+      \verb https://www.uio.no/studier/emner/sv/iss/SGO9010/openshaw1983.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.uio.no/studier/emner/sv/iss/SGO9010/openshaw1983.pdf
+      \endverb
+    \endentry
+    \entry{Pettorelli_2005_NDVI}{article}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=07d44792dc21047f5d32a7b72c4182b9}{%
+           family={Pettorelli},
+           familyi={P\bibinitperiod},
+           given={Nathalie},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d8f7ded8207725bbe64f0477affced05}{%
+           family={Vik},
+           familyi={V\bibinitperiod},
+           given={Jon\bibnamedelima Olav},
+           giveni={J\bibinitperiod\bibinitdelim O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fe5503418a455ca127560a1613ee190f}{%
+           family={Mysterud},
+           familyi={M\bibinitperiod},
+           given={Atle},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=366080baba46e7e9f166f35da0443fb2}{%
+           family={Gaillard},
+           familyi={G\bibinitperiod},
+           given={Jean-Michel},
+           giveni={J\bibinithyphendelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=46a2d9e5a678e054f1b071a2c00ec5e2}{%
+           family={Tucker},
+           familyi={T\bibinitperiod},
+           given={Compton\bibnamedelima J.},
+           giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8fd50728ffbf2e16557521d17a8b85d2}{%
+           family={Stenseth},
+           familyi={S\bibinitperiod},
+           given={Nils\bibnamedelima Chr.},
+           giveni={N\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{84eb9693a454255366e254df583f90fb}
+      \strng{fullhash}{a57c8fa5090970c94e1bc16342207f00}
+      \strng{bibnamehash}{a57c8fa5090970c94e1bc16342207f00}
+      \strng{authorbibnamehash}{a57c8fa5090970c94e1bc16342207f00}
+      \strng{authornamehash}{84eb9693a454255366e254df583f90fb}
+      \strng{authorfullhash}{a57c8fa5090970c94e1bc16342207f00}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Trends in Ecology \& Evolution}
+      \field{number}{9}
+      \field{title}{Using the satellite-derived NDVI to assess ecological responses to environmental change}
+      \field{volume}{20}
+      \field{year}{2005}
+      \field{pages}{503\bibrangedash 510}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1016/j.tree.2005.05.011
+      \endverb
+      \verb{urlraw}
+      \verb https://www.scirp.org/reference/referencespapers?referenceid=2466395
+      \endverb
+      \verb{url}
+      \verb https://www.scirp.org/reference/referencespapers?referenceid=2466395
+      \endverb
+    \endentry
+    \entry{Romero_2012_ExpansionUrbana}{article}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=044cb4fa35997f3ce9525366d4303821}{%
+           family={Romero},
+           familyi={R\bibinitperiod},
+           given={Hugo},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5250a52263a2368aef98a35ee756ab84}{%
+           family={Vásquez},
+           familyi={V\bibinitperiod},
+           given={Alexis},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=115cffada72c8a2aa09918774c72159c}{%
+           family={Fuentes},
+           familyi={F\bibinitperiod},
+           given={Claudio},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=554a650b1aae89172c772b01d8241d71}{%
+           family={Salgado},
+           familyi={S\bibinitperiod},
+           given={Marcela},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=146e7d8c18719f52af50cd22bd5c2cfa}{%
+           family={Schmidt},
+           familyi={S\bibinitperiod},
+           given={Alexis},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=af0a110fadfebc9fccdaa098b87723c7}{%
+           family={Banzhaf},
+           familyi={B\bibinitperiod},
+           given={Ellen},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4d34aca5bb045a4fb3e5db3eeaff0fcc}
+      \strng{fullhash}{47a968e543e0faf4e1d2dd9883d2fb67}
+      \strng{bibnamehash}{47a968e543e0faf4e1d2dd9883d2fb67}
+      \strng{authorbibnamehash}{47a968e543e0faf4e1d2dd9883d2fb67}
+      \strng{authornamehash}{4d34aca5bb045a4fb3e5db3eeaff0fcc}
+      \strng{authorfullhash}{47a968e543e0faf4e1d2dd9883d2fb67}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Revista de Geografía Norte Grande}
+      \field{number}{51}
+      \field{title}{Características socio ambientales de la expansión urbana de las Áreas metropolitanas de Santiago y Valparaíso}
+      \field{year}{2012}
+      \field{pages}{89\bibrangedash 110}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.4067/S0718-34022012000100006
+      \endverb
+      \verb{urlraw}
+      \verb https://www.researchgate.net/publication/42384847
+      \endverb
+      \verb{url}
+      \verb https://www.researchgate.net/publication/42384847
+      \endverb
+    \endentry
+  \enddatalist
+  \datalist[entry]{apa/global//global/global}
+    \entry{Garreaud_2020_MegaDrought}{article}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=0f858f5cfcbbd7f8c179371da6d96285}{%
+           family={Garreaud},
+           familyi={G\bibinitperiod},
+           given={René\bibnamedelima D.},
+           giveni={R\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7bcfad5db175a0a45e1cb11251da140e}{%
+           family={Boisier},
+           familyi={B\bibinitperiod},
+           given={Juan\bibnamedelima Pablo},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=684b649aab435fbbada6fdc33830c5d5}{%
+           family={Rondanelli},
+           familyi={R\bibinitperiod},
+           given={Roberto},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0428da2396020989f02865d310052228}{%
+           family={Montecinos},
+           familyi={M\bibinitperiod},
+           given={Aldo},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2684d42b8b8d43013efcf2eadb6eccf0}{%
+           family={Sepúlveda},
+           familyi={S\bibinitperiod},
+           given={Humberto\bibnamedelima H.},
+           giveni={H\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=94ebc7eb5dcd91d8fec78ce88b16aa59}{%
+           family={Veloso-Aguila},
+           familyi={V\bibinithyphendelim A\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ec384d7d3619119bea447c2f263992a4}
+      \strng{fullhash}{7e69f2b7296a340e324803e6be6e9162}
+      \strng{bibnamehash}{7e69f2b7296a340e324803e6be6e9162}
+      \strng{authorbibnamehash}{7e69f2b7296a340e324803e6be6e9162}
+      \strng{authornamehash}{ec384d7d3619119bea447c2f263992a4}
+      \strng{authorfullhash}{7e69f2b7296a340e324803e6be6e9162}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Climatology}
+      \field{number}{1}
+      \field{title}{The Central Chile Mega Drought (2010--2018): A climate dynamics perspective}
+      \field{volume}{40}
+      \field{year}{2020}
+      \field{pages}{421\bibrangedash 439}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1002/joc.6219
+      \endverb
+      \verb{urlraw}
+      \verb https://hess.copernicus.org/articles/29/5347/2025/
+      \endverb
+      \verb{url}
+      \verb https://hess.copernicus.org/articles/29/5347/2025/
+      \endverb
+    \endentry
+    \entry{Inostroza_2017_UrbanSprawl}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=98c480d18b8bcd8e418ef26fc9253508}{%
+           family={Inostroza},
+           familyi={I\bibinitperiod},
+           given={Luis},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7003a3d13e45c25383266e7950b5bc9a}{%
+           family={Baur},
+           familyi={B\bibinitperiod},
+           given={Roland},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=93e3e325dad35a3c94ea1312a3401ae7}{%
+           family={Csaplovics},
+           familyi={C\bibinitperiod},
+           given={Elmar},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e217fd3734713ce212dc0c50f2505c12}
+      \strng{fullhash}{30d9cd536c88b82caa87a99be782149a}
+      \strng{bibnamehash}{30d9cd536c88b82caa87a99be782149a}
+      \strng{authorbibnamehash}{30d9cd536c88b82caa87a99be782149a}
+      \strng{authornamehash}{e217fd3734713ce212dc0c50f2505c12}
+      \strng{authorfullhash}{30d9cd536c88b82caa87a99be782149a}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Environmental Management}
+      \field{note}{Consumo de suelo en Santiago: 20 m² por minuto}
+      \field{title}{Urban sprawl and fragmentation in Latin America: A dynamic quantification and characterization of spatial patterns}
+      \field{volume}{115}
+      \field{year}{2013}
+      \field{pages}{87\bibrangedash 97}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1016/j.jenvman.2012.11.007
+      \endverb
+      \verb{urlraw}
+      \verb https://scholar.google.com/citations?user=klkUZvIAAAAJ
+      \endverb
+      \verb{url}
+      \verb https://scholar.google.com/citations?user=klkUZvIAAAAJ
+      \endverb
+    \endentry
+    \entry{INE_2018_Censo}{report}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=a47a81adfd6b4513ddd86da671d47025}{%
+           family={{Instituto Nacional de Estadísticas}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {INE}%
+      }
+      \list{location}{1}{%
+        {Santiago, Chile}%
+      }
+      \strng{namehash}{a47a81adfd6b4513ddd86da671d47025}
+      \strng{fullhash}{a47a81adfd6b4513ddd86da671d47025}
+      \strng{bibnamehash}{a47a81adfd6b4513ddd86da671d47025}
+      \strng{authorbibnamehash}{a47a81adfd6b4513ddd86da671d47025}
+      \strng{authornamehash}{a47a81adfd6b4513ddd86da671d47025}
+      \strng{authorfullhash}{a47a81adfd6b4513ddd86da671d47025}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Reportes Comunales BCN basados en Censo 2017. Población Peñaflor: 90.201 habitantes}
+      \field{title}{Resultados Censo 2017: Región Metropolitana}
+      \field{type}{techreport}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb https://www.bcn.cl/siit/reportescomunales/comunas_v.html?anno=2017&idcom=13605
+      \endverb
+      \verb{url}
+      \verb https://www.bcn.cl/siit/reportescomunales/comunas_v.html?anno=2017&idcom=13605
+      \endverb
+    \endentry
+    \entry{ODEPA_2013_ExpansionUrbana}{report}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=3761bca52accb618180666154edff8b1}{%
+           family={{Oficina de Estudios y Políticas Agrarias}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {ODEPA, Ministerio de Agricultura}%
+      }
+      \list{location}{1}{%
+        {Santiago, Chile}%
+      }
+      \strng{namehash}{3761bca52accb618180666154edff8b1}
+      \strng{fullhash}{3761bca52accb618180666154edff8b1}
+      \strng{bibnamehash}{3761bca52accb618180666154edff8b1}
+      \strng{authorbibnamehash}{3761bca52accb618180666154edff8b1}
+      \strng{authornamehash}{3761bca52accb618180666154edff8b1}
+      \strng{authorfullhash}{3761bca52accb618180666154edff8b1}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Pérdida de 439 hectáreas de viñas en comunas periurbanas}
+      \field{title}{Expansión urbana y suelo agrícola: revisión de la situación en la Región Metropolitana}
+      \field{type}{techreport}
+      \field{year}{2013}
+      \verb{urlraw}
+      \verb https://www.odepa.gob.cl/wp-content/uploads/2013/12/expansionUrbana201312.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.odepa.gob.cl/wp-content/uploads/2013/12/expansionUrbana201312.pdf
+      \endverb
+    \endentry
+    \entry{Openshaw_1984_MAUP}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=20e0ba867779652a3b4f986e87eea9df}{%
+           family={Openshaw},
+           familyi={O\bibinitperiod},
+           given={Stan},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Norwich, UK}%
+      }
+      \list{publisher}{1}{%
+        {Geo Books}%
+      }
+      \strng{namehash}{20e0ba867779652a3b4f986e87eea9df}
+      \strng{fullhash}{20e0ba867779652a3b4f986e87eea9df}
+      \strng{bibnamehash}{20e0ba867779652a3b4f986e87eea9df}
+      \strng{authorbibnamehash}{20e0ba867779652a3b4f986e87eea9df}
+      \strng{authornamehash}{20e0ba867779652a3b4f986e87eea9df}
+      \strng{authorfullhash}{20e0ba867779652a3b4f986e87eea9df}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{38}
+      \field{series}{Concepts and Techniques in Modern Geography}
+      \field{title}{The Modifiable Areal Unit Problem}
+      \field{year}{1984}
+      \verb{urlraw}
+      \verb https://www.uio.no/studier/emner/sv/iss/SGO9010/openshaw1983.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.uio.no/studier/emner/sv/iss/SGO9010/openshaw1983.pdf
+      \endverb
+    \endentry
+    \entry{Pettorelli_2005_NDVI}{article}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=07d44792dc21047f5d32a7b72c4182b9}{%
+           family={Pettorelli},
+           familyi={P\bibinitperiod},
+           given={Nathalie},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d8f7ded8207725bbe64f0477affced05}{%
+           family={Vik},
+           familyi={V\bibinitperiod},
+           given={Jon\bibnamedelima Olav},
+           giveni={J\bibinitperiod\bibinitdelim O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fe5503418a455ca127560a1613ee190f}{%
+           family={Mysterud},
+           familyi={M\bibinitperiod},
+           given={Atle},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=366080baba46e7e9f166f35da0443fb2}{%
+           family={Gaillard},
+           familyi={G\bibinitperiod},
+           given={Jean-Michel},
+           giveni={J\bibinithyphendelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=46a2d9e5a678e054f1b071a2c00ec5e2}{%
+           family={Tucker},
+           familyi={T\bibinitperiod},
+           given={Compton\bibnamedelima J.},
+           giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8fd50728ffbf2e16557521d17a8b85d2}{%
+           family={Stenseth},
+           familyi={S\bibinitperiod},
+           given={Nils\bibnamedelima Chr.},
+           giveni={N\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{84eb9693a454255366e254df583f90fb}
+      \strng{fullhash}{a57c8fa5090970c94e1bc16342207f00}
+      \strng{bibnamehash}{a57c8fa5090970c94e1bc16342207f00}
+      \strng{authorbibnamehash}{a57c8fa5090970c94e1bc16342207f00}
+      \strng{authornamehash}{84eb9693a454255366e254df583f90fb}
+      \strng{authorfullhash}{a57c8fa5090970c94e1bc16342207f00}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Trends in Ecology \& Evolution}
+      \field{number}{9}
+      \field{title}{Using the satellite-derived NDVI to assess ecological responses to environmental change}
+      \field{volume}{20}
+      \field{year}{2005}
+      \field{pages}{503\bibrangedash 510}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1016/j.tree.2005.05.011
+      \endverb
+      \verb{urlraw}
+      \verb https://www.scirp.org/reference/referencespapers?referenceid=2466395
+      \endverb
+      \verb{url}
+      \verb https://www.scirp.org/reference/referencespapers?referenceid=2466395
+      \endverb
+    \endentry
+    \entry{Romero_2012_ExpansionUrbana}{article}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=044cb4fa35997f3ce9525366d4303821}{%
+           family={Romero},
+           familyi={R\bibinitperiod},
+           given={Hugo},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5250a52263a2368aef98a35ee756ab84}{%
+           family={Vásquez},
+           familyi={V\bibinitperiod},
+           given={Alexis},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=115cffada72c8a2aa09918774c72159c}{%
+           family={Fuentes},
+           familyi={F\bibinitperiod},
+           given={Claudio},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=554a650b1aae89172c772b01d8241d71}{%
+           family={Salgado},
+           familyi={S\bibinitperiod},
+           given={Marcela},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=146e7d8c18719f52af50cd22bd5c2cfa}{%
+           family={Schmidt},
+           familyi={S\bibinitperiod},
+           given={Alexis},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=af0a110fadfebc9fccdaa098b87723c7}{%
+           family={Banzhaf},
+           familyi={B\bibinitperiod},
+           given={Ellen},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4d34aca5bb045a4fb3e5db3eeaff0fcc}
+      \strng{fullhash}{47a968e543e0faf4e1d2dd9883d2fb67}
+      \strng{bibnamehash}{47a968e543e0faf4e1d2dd9883d2fb67}
+      \strng{authorbibnamehash}{47a968e543e0faf4e1d2dd9883d2fb67}
+      \strng{authornamehash}{4d34aca5bb045a4fb3e5db3eeaff0fcc}
+      \strng{authorfullhash}{47a968e543e0faf4e1d2dd9883d2fb67}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Revista de Geografía Norte Grande}
+      \field{number}{51}
+      \field{title}{Características socio ambientales de la expansión urbana de las Áreas metropolitanas de Santiago y Valparaíso}
+      \field{year}{2012}
+      \field{pages}{89\bibrangedash 110}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.4067/S0718-34022012000100006
+      \endverb
+      \verb{urlraw}
+      \verb https://www.researchgate.net/publication/42384847
+      \endverb
+      \verb{url}
+      \verb https://www.researchgate.net/publication/42384847
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

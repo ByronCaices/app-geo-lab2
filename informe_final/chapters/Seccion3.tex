@@ -1,0 +1,66 @@
+\section{Resultados}
+
+\subsection{Adquisición y Calidad de Datos}
+
+Se adquirieron exitosamente 4 imágenes Sentinel-2 nivel 2A cumpliendo criterios de nubosidad. Fechas: 15 enero 2018 (2.3\% nubes, tile 19HCB), 8 febrero 2020 (1.8\%), 22 enero 2022 (3.1\%), 10 enero 2024 (2.7\%). Dataset procesado totalizó 161 MB (4 imágenes multibanda).
+
+\subsection{Evolución de Índices Espectrales 2018-2024}
+
+\begin{table}[h]
+\centering
+\caption{Estadísticas de índices espectrales por año (promedio comunal)}
+\begin{tabular}{lcccccc}
+\hline
+\textbf{Índice} & \textbf{2018} & \textbf{2020} & \textbf{2022} & \textbf{2024} & \textbf{Cambio 2018-2024} \\
+\hline
+NDVI & 0.417 & 0.365 & 0.373 & 0.405 & -0.012 (-2.9\%) \\
+NDBI & -0.042 & -0.011 & -0.020 & -0.031 & +0.011 (+26.2\%) \\
+NDWI & -0.494 & -0.442 & -0.448 & -0.476 & +0.018 (+3.6\%) \\
+BSI & 0.022 & 0.051 & 0.040 & 0.030 & +0.008 (+36.4\%) \\
+\hline
+\end{tabular}
+\end{table}
+
+\textbf{Tendencias:} Crisis vegetativa 2020 (NDVI 0.365, -12\%) coincidente con megasequía y expansión urbana máxima. Recuperación 2024 (NDVI 0.405, +11\%) por fin de megasequía (ver Anexo I, Figuras \ref{fig:evolucion} y \ref{fig:ndvi_comparacion}).
+
+\subsection{Detección de Cambios por Método}
+
+\begin{table}[h]
+\centering
+\caption{Áreas transformadas según 3 métodos (2018-2024)}
+\begin{tabular}{lcccc}
+\hline
+\textbf{Tipo de Cambio} & \textbf{Diferenciación} & \textbf{Z-Score} & \textbf{Multicriterio} & \textbf{Media} \\
+\hline
+Urbanización (ha) & --- & --- & 1,689 & 1,689 \\
+Pérdida vegetación (ha) & 3,743 & 2,506 & 2,196 & 2,815 \\
+Ganancia vegetación (ha) & 2,463 & 6,459 & 2,463 & 3,795 \\
+\hline
+\end{tabular}
+\end{table}
+
+\textbf{Síntesis cuantitativa:} Urbanización de 1,689 ha (6.94\% comuna, tasa 1.16\%/año, 282 ha/año). Pérdida neta de vegetación 2,086 ha (-8.58\% respecto a 2018). Concordancia entre métodos: diferencias $<$10\% en detección de pérdida vegetativa. Correlación NDVI-NDBI: -0.87 (Pearson, p$<$0.001), confirmando conversión directa vegetación$\rightarrow$urbanización.
+
+\subsection{Análisis Zonal: Hotspots de Transformación}
+
+El análisis identificó 18 celdas como zonas críticas (IT $> 0.75$, 18\% del territorio) que concentran 539 ha (32\% de urbanización total). Top 3 zonas:
+
+\begin{table}[h]
+\centering
+\caption{Top 3 zonas por Índice de Transformación}
+\begin{tabular}{lcccc}
+\hline
+\textbf{Zona ID} & \textbf{Urbanización (ha)} & \textbf{Pérd. Veg (ha)} & \textbf{Gan. Veg (ha)} & \textbf{IT (0-100)} \\
+\hline
+Z\_00\_08 & 54.16 & 56.83 & 0.00 & 110.99 \\
+Z\_07\_08 & 58.00 & 43.42 & 12.39 & 89.03 \\
+Z\_06\_01 & 60.17 & 44.55 & 25.10 & 79.62 \\
+\hline
+\end{tabular}
+\end{table}
+
+\textbf{Patrón espacial:} Concentración en sectores NE-E, indicando frente de expansión periurbano (ver Figura \ref{fig:coropleticos}, Anexo I). Zona Z\_00\_08 presenta IT máximo (111) con pérdida vegetativa extrema (59.62 ha pérdida vs 2.79 ha ganancia).
+
+\subsection{Evolución Temporal}
+
+\textbf{Cobertura urbana:} Incremento sostenido de 41.6\% (2018) a 48.2\% (2024), representando +6.6 puntos porcentuales en 6 años (tasa 1.1\%/año). Balance neto vegetativo: +267 ha (ganancia supera pérdida), pero ganancia ocurre en áreas rurales marginales (baja calidad ecológica) mientras pérdida afecta vegetación periurbana nativa (alto valor ecosistémico).

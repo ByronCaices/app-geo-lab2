@@ -1,0 +1,61 @@
+\section{Metodología}
+
+\subsection{Diseño General}
+
+El proyecto se estructuró en cinco fases secuenciales: (1) Adquisición de imágenes Sentinel-2, (2) Cálculo de índices espectrales, (3) Detección de cambios, (4) Análisis zonal, y (5) Dashboard interactivo.
+
+\subsection{Fase 1: Adquisición de Datos Satelitales}
+
+\textbf{Fuente de datos:} Imágenes Sentinel-2 nivel 2A (reflectancia de superficie) de la colección COPERNICUS/S2\_SR\_HARMONIZED, descargadas mediante Google Earth Engine.
+
+\textbf{Criterios de selección:}
+\begin{itemize}
+    \item \textbf{Cobertura de nubes:} $<$5\% sobre Peñaflor (máximo 20\% cuando no hay disponibilidad).
+    \item \textbf{Estacionalidad:} Veranos australes (enero-febrero) de 2018, 2020, 2022 y 2024.
+    \item \textbf{Bandas espectrales:} B2 (Blue, 490 nm), B3 (Green, 560 nm), B4 (Red, 665 nm), B8 (NIR, 842 nm), B11 (SWIR1, 1610 nm), B12 (SWIR2, 2190 nm).
+    \item \textbf{Resolución espacial:} 10 m para bandas visibles e infrarrojo cercano, 20 m para infrarrojo de onda corta (remuestreado a 10 m).
+\end{itemize}
+
+\textbf{Pre-procesamiento:} Composición mediana de imágenes del período, máscara de nubes basada en banda QA60 (bits 10 y 11), recorte espacial al área de estudio, y conversión a GeoTIFF comprimido.
+
+\subsection{Fase 2: Cálculo de Índices Espectrales}
+
+Se calcularon cuatro índices espectrales normalizados para caracterizar coberturas del suelo (fórmulas detalladas en Anexo D):
+
+\textbf{NDVI (Normalized Difference Vegetation Index):} Identifica vegetación activa mediante contraste NIR/Red. Valores altos ($>$0.3) indican vegetación densa.
+
+\textbf{NDBI (Normalized Difference Built-up Index):} Detecta áreas construidas mediante contraste SWIR1/NIR. Valores positivos indican superficies impermeables.
+
+\textbf{NDWI (Normalized Difference Water Index):} Identifica cuerpos de agua mediante contraste Green/NIR. Valores $>$0.1 indican agua superficial.
+
+\textbf{BSI (Bare Soil Index):} Detecta suelo desnudo mediante combinación de bandas SWIR1, Red, NIR y Blue. Valores altos indican suelo expuesto sin vegetación.
+
+\textbf{Procesamiento técnico:} Detección automática de formato de entrada (DN 0-10000 vs. reflectancia 0-1), escalamiento a reflectancia cuando es necesario, aplicación de epsilon (1e-10) para evitar división por cero, y asignación de valor nodata (-9999) a píxeles inválidos. Salida en formato GeoTIFF multi-banda (4 bandas por año), tipo de dato Float32.
+
+\subsection{Fase 3: Detección de Cambios}
+
+Se implementaron tres métodos complementarios para identificar transformaciones urbanas:
+
+\textbf{Método 1 - Diferenciación Simple:} Resta aritmética de índices entre fechas ($\Delta = \text{Índice}_{2024} - \text{Índice}_{2018}$). Clasificación: pérdida de vegetación si $\Delta$NDVI $< -0.15$, ganancia si $\Delta$NDVI $> 0.15$, sin cambio en rango intermedio. Umbral de 0.15 basado en literatura científica para zonas mediterráneas \parencite{Pettorelli_2005_NDVI} y variabilidad estacional local (desviación estándar NDVI $\approx$ 0.23).
+
+\textbf{Método 2 - Clasificación Multicriterio:} Combinación de NDVI, NDBI y NDWI mediante reglas lógicas aplicadas en cascada. Regla de urbanización: NDVI$_{2018} > 0.3$ (era vegetación densa) AND NDBI$_{2024} > 0$ (ahora es área urbana) AND ($\Delta$NDBI $> 0.15$). Otras reglas para pérdida/ganancia de vegetación, cambios de agua. Genera mapa categórico con 6 clases de cambio.
+
+\textbf{Método 3 - Z-Score Normalizado:} Detección de anomalías estadísticas respecto al histórico. Z-score = (NDVI$_{2024}$ - $\mu_{hist}$) / ($\sigma_{hist}$ + $\epsilon$), donde $\mu_{hist}$ es la media de 2018-2020-2022 y $\sigma_{hist}$ la desviación estándar. Clasificación: anomalía negativa si Z $< -2$ (urbanización probable), normal si $|Z| \leq 2$, anomalía positiva si Z $> +2$ (revegetación).
+
+\subsection{Fase 4: Análisis Zonal}
+
+\textbf{Grilla de análisis:} Se creó una malla sistemática de 10$\times$10 celdas (100 zonas totales, ~2.02 km² por celda) cubriendo el área de estudio. Justificación: garantiza cobertura completa sin gaps, facilita comparaciones inter-zonales, y mitiga el Problema de Unidad de Área Modificable (MAUP) \parencite{Openshaw_1984_MAUP}.
+
+\textbf{Estadísticas zonales:} Para cada celda se calcularon: área urbanizada (ha), pérdida/ganancia de vegetación (ha), promedios de índices espectrales, Índice de Transformación (IT) compuesto normalizado 0-100. IT pondera urbanización (40\%), pérdida vegetativa (35\%) y cambio NDBI (25\%).
+
+\textbf{Identificación de hotspots:} Ranking descendente por urbanización y por IT. Top 10 zonas clasificadas como críticas (IT $> 0.75$). Análisis de autocorrelación espacial para detectar clusters de transformación.
+
+\subsection{Fase 5: Dashboard Interactivo}
+
+Aplicación web desarrollada con Streamlit integrando: (1) Panel de métricas (4 KPIs con deltas porcentuales), (2) Mapa interactivo Folium con capa coroplética (esquema YlOrRd) y tooltips personalizados, (3) Filtros dinámicos temporales y espaciales en sidebar, (4) Gráficos Plotly de evolución temporal (NDVI/NDBI dual-axis, cobertura en áreas apiladas), (5) Rankings top-10 con tablas estilizadas (degradado de colores), (6) Comparador visual antes/después de imágenes NDVI, (7) Botones de descarga CSV. Tiempo de carga $< 2$ segundos con cache de datos mediante \texttt{@st.cache\_data}.
+
+\subsection{Validación}
+
+\textbf{Validación visual:} 50 píxeles aleatorios clasificados como "urbanización" fueron verificados con imágenes de alta resolución de Google Earth Pro (2018-2024), alcanzando 90\% de precisión (45/50 correctos). Errores de comisión: 3 invernaderos agrícolas, 1 cancha deportiva, 1 expansión industrial.
+
+\textbf{Validación con PRC:} Comparación de tasa de crecimiento detectada (1.16\%/año, 282 ha/año) con proyecciones del Plan Regulador Comunal (0.5\%/año, 125 ha/año), revelando desvío del 226\%.

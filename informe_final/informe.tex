@@ -1,0 +1,121 @@
+\documentclass[letterpaper,12pt]{article}
+
+% Librerías a utilizar
+\usepackage[utf8]{inputenc}	% Codificación 
+\usepackage[T1]{fontenc}
+% Compat shim: biblatex-apa uses cmd/@makecaption hook not supported here
+\makeatletter
+\let\APA@origAddToHook\AddToHook
+\def\APA@makecaptionhook{cmd/@makecaption/before}
+\long\def\AddToHook#1#2{%
+  \edef\APA@hookname{#1}%
+  \ifx\APA@hookname\APA@makecaptionhook
+    \pretocmd{\@makecaption}{#2}{}{}%
+  \else
+    \APA@origAddToHook{#1}{#2}%
+  \fi
+}
+\makeatother
+\usepackage[style=apa, backend=biber, language=spanish]{biblatex}
+\makeatletter
+\let\AddToHook\APA@origAddToHook
+\makeatother
+\usepackage{graphicx}		% Imágenes
+\usepackage{indentfirst}		% Sangría
+\usepackage{amsmath, amsfonts, amssymb}	% Figuras matemáticas
+\usepackage{xurl}    % URL
+\usepackage{hyperref}
+\usepackage{csquotes}
+\usepackage{booktabs}
+\usepackage{placeins}
+\usepackage{tabularx}
+\usepackage[spanish,es-tabla]{babel}	% Idioma
+\addbibresource{bibliografia.bib}
+
+% Fuente Charter
+\usepackage{charter}
+
+\usepackage[left=3cm,right=2.54cm,top=2.54cm,bottom=2.54cm]{geometry}
+\usepackage{multirow}
+
+\setlength{\parindent}{2cm}	% Sangría en los párrafos
+\renewcommand{\baselinestretch}{1.5}	% Interlineado
+
+% Renombrar ciertos títulos del texto
+\renewcommand\spanishcontentsname{Tabla de contenidos}
+\renewcommand\spanishrefname{Bibliografía}
+
+% Inicio del documento
+\begin{document}
+
+%%%%%%%%% PORTADA %%%%%%%%%
+
+\newpage
+\vspace*{-.5cm}
+% Logo institucional
+\begin{picture}(30,4)(25,30)
+\put(370,-20){\IfFileExists{./images/Logo_Usach.pdf}{\includegraphics[scale=0.16]{./images/Logo_Usach.pdf}}{}}
+\end{picture}
+
+\sloppy
+\thispagestyle{empty}
+\vspace*{-1.6cm}
+
+% Datos institucionales
+\begin{center}
+\vspace{0.5cm}
+	{\bf \mbox{\Large UNIVERSIDAD DE SANTIAGO DE CHILE}}\\
+	{\bf \mbox{\large FACULTAD DE INGENIERÍA}}\\
+	{\bf \mbox{\large Departamento de Ingeniería Informática}}\\
+\end{center}
+
+	\vspace{4cm}
+ 
+	%Título del trabajo
+	\begin{center}
+	\Large
+		\textbf{Laboratorio 2}\\
+        \large{\textbf{Análisis Multitemporal de Cambios de Uso de Suelo}}\\
+        \normalsize{\textbf{Comuna de Peñaflor (2018-2024)}}
+	\end{center}
+	
+	% Datos personales
+	\vspace*{5.5cm}
+	\begin{flushright}
+		\begin{tabular}[t]{l l}
+			Estudiante: &Byron Caices\\
+			Curso: &Tópico de Especialidad: Geoinformática\\
+			Profesor: &Francisco Parra\\
+		\end{tabular}
+	\end{flushright}
+	\begin{center}
+		\vspace{1.5cm}
+		% Fecha
+		29 de Enero, 2026
+	\end{center}
+
+\newpage
+
+\normalsize
+\tableofcontents
+\thispagestyle{empty}
+
+\newpage
+\renewcommand{\thepage}{\arabic{page}}
+\setcounter{page}{1}
+
+% Capítulos agregados 
+\input{chapters/Seccion1}
+\input{chapters/Seccion2}
+\input{chapters/Seccion3}
+\input{chapters/Seccion4}
+\input{chapters/Seccion5}
+
+\clearpage
+\addcontentsline{toc}{section}{Bibliografía}
+\printbibliography
+
+\clearpage
+\include{chapters/Anexos}
+
+\end{document}
